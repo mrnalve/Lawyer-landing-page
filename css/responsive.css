@@ -1,0 +1,225 @@
+@media(min-width:767.99px) {
+
+    /* common css */
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* hero part starts */
+    #hero .hero_cnt {
+        flex-basis: 55%;
+    }
+
+    #hero .hero_cnt>h1 {
+        font-size: 70px;
+    }
+
+    #hero .hero_cnt>p {
+        font-size: 24px;
+    }
+
+    #hero .hero_cnt>a {
+        font-size: 18px;
+    }
+
+    #hero .hero_cnt .office span {
+        font-size: 22px;
+    }
+
+    #hero .hero_cnt .office .office_img .row {
+        width: 300px;
+    }
+
+    #hero .hero_img {
+        display: block;
+        flex-basis: 45%;
+    }
+
+    #hero .hero_img img {
+        width: 390px;
+    }
+
+    /* hero part ends */
+
+    /* services part starts */
+    #services .row {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #services .ser_left h1 {
+        font-size: 48px;
+    }
+
+    #services .ser_left p {
+        font-size: 20px;
+    }
+
+    #services .ser_left {
+        flex-basis: 40%;
+    }
+
+    #services .ser_right {
+        flex-basis: 60%;
+        margin-top: 0;
+    }
+
+    #services .ser_right .ser_card {
+        flex-basis: 45%;
+        margin: 15px;
+    }
+
+    /* services part ends */
+
+    /* count part starts */
+    #count .row {
+        justify-content: center;
+    }
+
+    #count .counting {
+        margin: 50px 0;
+        padding: 0 50px;
+        border-right: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* count part ends */
+
+    /* testimonial part starts */
+    #testimonial .clint_testi {
+        flex-basis: 45%;
+    }
+
+    #testimonial .container>h1 {
+        font-size: 48px;
+    }
+
+    /* testimonial part ends */
+
+    /* contact part starts */
+    #contact .contact_txt h1 {
+        font-size: 42px;
+    }
+
+    #contact .contact_txt p {
+        font-size: 22px;
+        color: #4F4F4F;
+        font-weight: 400;
+        letter-spacing: .5px;
+        padding: 20px 0;
+    }
+
+    #contact .contact_img {
+        display: block;
+    }
+    #contact .contact_img img{
+        border-radius: 0px 0px 0px 40px;
+    }
+
+    #contact .row .container {
+       flex-basis: 60%;
+    }
+
+    /* contact part ends */
+
+    /* footer part starts */
+    footer .footer_logo{
+        flex-basis: 40%;
+    }
+    footer .footer_card{
+        flex-basis: 20%;
+    }
+    /* footer part ends */
+    #copyright .social span i{
+        margin: 0 6px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+
+    /* hero section */
+    #hero .hero_img {
+        display: none;
+        flex-basis: 0%;
+    }
+
+    #hero .hero_cnt {
+        flex-basis: 80%;
+    }
+
+    /* services part starts */
+    #services .ser_right .ser_card {
+        flex-basis: 30%;
+        margin: 10px;
+    }
+    /* contact part starts */
+    #contact .row .container {
+        flex-basis: 40%;
+     }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+
+    /* services part starts */
+    #services .ser_right .ser_card {
+        flex-basis: 44%;
+    }
+    /* contact part starts */
+    #contact .row .container {
+        flex-basis: 52%;
+     }
+}
+
+@media (max-width: 991.99px) {
+    nav label.logo {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 955.99px) {
+
+    /* navigation part starts */
+    nav label.logo {
+        padding: 0 30px;
+    }
+
+    nav .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #094B72;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.3s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a,
+    nav ul li a.active,
+    nav ul li a:hover {
+        color: white;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    /* navigation part ends */
+}
